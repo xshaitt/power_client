@@ -92,7 +92,7 @@
                 <a href="{{url('/')}}" class="navbar-brand">
                     <img src="img/logo.png" alt="Nifty Logo" class="brand-icon">
                     <div class="brand-title">
-                        <span class="brand-text">电源管家</span>
+                        <span class="brand-text">电源管家云控制台</span>
                     </div>
                 </a>
             </div>
@@ -127,7 +127,7 @@
                         <!--Notification dropdown menu-->
                         <div class="dropdown-menu dropdown-menu-md">
                             <div class="pad-all bord-btm">
-                                <p class="text-semibold text-main mar-no">You have 9 notifications.</p>
+                                <p class="text-semibold text-main mar-no">您还有3条未读消息.</p>
                             </div>
                             <div class="nano scrollable">
                                 <div class="nano-content">
@@ -135,115 +135,17 @@
 
                                         <!-- Dropdown list-->
                                         <li>
-                                            <a href="#">
-                                                <div class="clearfix">
-                                                    <p class="pull-left">Database Repair</p>
-                                                    <p class="pull-right">70%</p>
-                                                </div>
-                                                <div class="progress progress-sm">
-                                                    <div style="width: 70%;" class="progress-bar">
-                                                        <span class="sr-only">70% Complete</span>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </li>
-
-                                        <!-- Dropdown list-->
-                                        <li>
-                                            <a href="#">
-                                                <div class="clearfix">
-                                                    <p class="pull-left">Upgrade Progress</p>
-                                                    <p class="pull-right">10%</p>
-                                                </div>
-                                                <div class="progress progress-sm">
-                                                    <div style="width: 10%;" class="progress-bar progress-bar-warning">
-                                                        <span class="sr-only">10% Complete</span>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </li>
-
-                                        <!-- Dropdown list-->
-                                        <li>
                                             <a class="media" href="#">
-                                                <span class="badge badge-success pull-right">90%</span>
                                                 <div class="media-left">
                                                     <i class="demo-pli-data-settings icon-2x"></i>
                                                 </div>
                                                 <div class="media-body">
-                                                    <div class="text-nowrap">HDD is full</div>
-                                                    <small class="text-muted">50 minutes ago</small>
+                                                    <div class="text-nowrap">张江高科机房-蓄电池电量不足</div>
+                                                    <small class="text-muted">50 分钟之前</small>
                                                 </div>
                                             </a>
                                         </li>
 
-                                        <!-- Dropdown list-->
-                                        <li>
-                                            <a class="media" href="#">
-                                                <div class="media-left">
-                                                    <i class="demo-pli-file-edit icon-2x"></i>
-                                                </div>
-                                                <div class="media-body">
-                                                    <div class="text-nowrap">Write a news article</div>
-                                                    <small class="text-muted">Last Update 8 hours ago</small>
-                                                </div>
-                                            </a>
-                                        </li>
-
-                                        <!-- Dropdown list-->
-                                        <li>
-                                            <a class="media" href="#">
-                                                <span class="label label-danger pull-right">New</span>
-                                                <div class="media-left">
-                                                    <i class="demo-pli-speech-bubble-7 icon-2x"></i>
-                                                </div>
-                                                <div class="media-body">
-                                                    <div class="text-nowrap">Comment Sorting</div>
-                                                    <small class="text-muted">Last Update 8 hours ago</small>
-                                                </div>
-                                            </a>
-                                        </li>
-
-                                        <!-- Dropdown list-->
-                                        <li>
-                                            <a class="media" href="#">
-                                                <div class="media-left">
-                                                    <i class="demo-pli-add-user-plus-star icon-2x"></i>
-                                                </div>
-                                                <div class="media-body">
-                                                    <div class="text-nowrap">New User Registered</div>
-                                                    <small class="text-muted">4 minutes ago</small>
-                                                </div>
-                                            </a>
-                                        </li>
-
-                                        <!-- Dropdown list-->
-                                        <li class="bg-gray">
-                                            <a class="media" href="#">
-                                                <div class="media-left">
-                                                    <img class="img-circle img-sm" alt="Profile Picture"
-                                                         src="img/profile-photos/9.png">
-                                                </div>
-                                                <div class="media-body">
-                                                    <div class="text-nowrap">Lucy sent you a message</div>
-                                                    <small class="text-muted">30 minutes ago</small>
-                                                </div>
-                                            </a>
-                                        </li>
-
-                                        <!-- Dropdown list-->
-                                        <li class="bg-gray">
-                                            <a class="media" href="#">
-                                                <div class="media-left">
-                                                    <img class="img-circle img-sm" alt="Profile Picture"
-                                                         src="img/profile-photos/3.png">
-                                                </div>
-                                                <div class="media-body">
-                                                    <div class="text-nowrap">Jackson sent you a message</div>
-                                                    <small class="text-muted">40 minutes ago</small>
-                                                </div>
-                                            </a>
-                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -251,7 +153,7 @@
                             <!--Dropdown footer-->
                             <div class="pad-all bord-top">
                                 <a href="#" class="btn-link text-dark box-block">
-                                    <i class="fa fa-angle-right fa-lg pull-right"></i>Show All Notifications
+                                    <i class="fa fa-angle-right fa-lg pull-right"></i>显示所有消息
                                 </a>
                             </div>
                         </div>
@@ -326,50 +228,20 @@
                                     <!--<img class="img-circle img-user media-object" src="img/profile-photos/1.png" alt="Profile Picture">-->
                                     <i class="demo-pli-male ic-user"></i>
                                 </span>
-                            <div class="username hidden-xs">Aaron Chavez</div>
+                            <div class="username hidden-xs">年轻而且有才</div>
                         </a>
-
-
                         <div class="dropdown-menu dropdown-menu-md dropdown-menu-right panel-default">
-
-                            <!-- Dropdown heading  -->
-                            <div class="pad-all bord-btm">
-                                <p class="text-main mar-btm"><span class="text-bold">750GB</span> of 1,000GB Used</p>
-                                <div class="progress progress-sm">
-                                    <div class="progress-bar" style="width: 70%;">
-                                        <span class="sr-only">70%</span>
-                                    </div>
-                                </div>
-                            </div>
-
 
                             <!-- User dropdown menu -->
                             <ul class="head-list">
                                 <li>
                                     <a href="#">
-                                        <i class="demo-pli-male icon-lg icon-fw"></i> Profile
+                                        <i class="demo-pli-computer-secure icon-lg icon-fw"></i>修改密码
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <span class="badge badge-danger pull-right">9</span>
-                                        <i class="demo-pli-mail icon-lg icon-fw"></i> Messages
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <span class="label label-success pull-right">New</span>
-                                        <i class="demo-pli-gear icon-lg icon-fw"></i> Settings
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="demo-pli-information icon-lg icon-fw"></i> Help
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="demo-pli-computer-secure icon-lg icon-fw"></i> Lock screen
+                                        <i class="demo-pli-computer-secure icon-lg icon-fw"></i>锁屏
                                     </a>
                                 </li>
                             </ul>
@@ -377,7 +249,7 @@
                             <!-- Dropdown footer -->
                             <div class="pad-all text-right">
                                 <a href="pages-login.html" class="btn btn-primary">
-                                    <i class="demo-pli-unlock"></i> Logout
+                                    <i class="demo-pli-unlock"></i> 退出
                                 </a>
                             </div>
                         </div>
@@ -403,7 +275,7 @@
             <!--Page Title-->
             <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
             <div id="page-title">
-                <h1 class="page-header text-overflow">Dashboard</h1>
+                <h1 class="page-header text-overflow">我的电源管家</h1>
 
                 <!--Searchbox-->
                 <div class="searchbox">
@@ -424,178 +296,147 @@
 
 
                 <div class="row">
-                    <div class="col-xs-12">
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <h3 class="panel-title">Order Status</h3>
-                            </div>
+                    <div class="col-md-12">
 
-                            <!--Data Table-->
-                            <!--===================================================-->
-                            <div class="panel-body">
-                                <div class="pad-btm form-inline">
-                                    <div class="row">
-                                        <div class="col-sm-6 table-toolbar-left">
-                                            <button class="btn btn-purple"><i class="demo-pli-add icon-fw"></i>Add
-                                            </button>
-                                            <button class="btn btn-default"><i class="demo-pli-printer"></i></button>
-                                            <div class="btn-group">
-                                                <button class="btn btn-default"><i class="demo-pli-information"></i>
-                                                </button>
-                                                <button class="btn btn-default"><i class="demo-pli-recycling"></i>
-                                                </button>
+                        <!--Default Accordion-->
+                        <!--===================================================-->
+                        <div class="panel-group accordion" id="accordion">
+                            <div class="panel">
+
+                                <!--Accordion title-->
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-parent="#accordion" data-toggle="collapse" href="#collapseOne">设备号:1 设备名称:张江高科1号机房</a>
+                                    </h4>
+                                </div>
+
+                                <!--Accordion content-->
+                                <div class="panel-collapse collapse in" id="collapseOne">
+                                    <div class="panel-body">
+                                        <div class="alert alert-primary">
+                                            <div>
+                                                <h4>UPS</h4>
+                                                设备ID:123
+                                                状态:开启
+                                                厂家:富士通
                                             </div>
-                                        </div>
-                                        <div class="col-sm-6 table-toolbar-right">
-                                            <div class="form-group">
-                                                <input type="text" autocomplete="off" class="form-control"
-                                                       placeholder="Search" id="demo-input-search2">
+                                            <div>
+                                                <h4>蓄电池</h4>
+                                                设备ID:2
+                                                状态:正常使用
+                                                厂家:富士通
+                                                有效期:3年
                                             </div>
-                                            <div class="btn-group">
-                                                <button class="btn btn-default"><i
-                                                            class="demo-pli-download-from-cloud"></i></button>
-                                                <div class="btn-group">
-                                                    <button class="btn btn-default dropdown-toggle"
-                                                            data-toggle="dropdown">
-                                                        <i class="demo-pli-gear"></i>
-                                                        <span class="caret"></span>
-                                                    </button>
-                                                    <ul class="dropdown-menu dropdown-menu-right" role="menu">
-                                                        <li><a href="#">Action</a></li>
-                                                        <li><a href="#">Another action</a></li>
-                                                        <li><a href="#">Something else here</a></li>
-                                                        <li class="divider"></li>
-                                                        <li><a href="#">Separated link</a></li>
-                                                    </ul>
-                                                </div>
+                                            <div>
+                                                <h4>蓄电池</h4>
+                                                设备ID:3
+                                                状态:电量不足
+                                                厂家:富士通
+                                                有效期:3年
+                                            </div>
+                                            <div>
+                                                <h4>蓄电池</h4>
+                                                设备ID:4
+                                                状态:正常使用
+                                                厂家:富士通
+                                                有效期:3年
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="table-responsive">
-                                    <table class="table table-striped">
-                                        <thead>
-                                        <tr>
-                                            <th>Invoice</th>
-                                            <th>User</th>
-                                            <th>Order date</th>
-                                            <th>Amount</th>
-                                            <th class="text-center">Status</th>
-                                            <th class="text-center">Tracking Number</th>
-                                        </tr>
-                                        </thead>
-                                        <tbody>
-                                        <tr>
-                                            <td><a href="#" class="btn-link"> Order #53431</a></td>
-                                            <td>Steve N. Horton</td>
-                                            <td><span class="text-muted"><i
-                                                            class="fa fa-clock-o"></i> Oct 22, 2014</span></td>
-                                            <td>$45.00</td>
-                                            <td class="text-center">
-                                                <div class="label label-table label-success">Paid</div>
-                                            </td>
-                                            <td class="text-center">-</td>
-                                        </tr>
-                                        <tr>
-                                            <td><a href="#" class="btn-link"> Order #53432</a></td>
-                                            <td>Charles S Boyle</td>
-                                            <td><span class="text-muted"><i
-                                                            class="fa fa-clock-o"></i> Oct 24, 2014</span></td>
-                                            <td>$245.30</td>
-                                            <td class="text-center">
-                                                <div class="label label-table label-info">Shipped</div>
-                                            </td>
-                                            <td class="text-center"><i class="fa fa-plane"></i> CGX0089734531</td>
-                                        </tr>
-                                        <tr>
-                                            <td><a href="#" class="btn-link"> Order #53433</a></td>
-                                            <td>Lucy Doe</td>
-                                            <td><span class="text-muted"><i
-                                                            class="fa fa-clock-o"></i> Oct 24, 2014</span></td>
-                                            <td>$38.00</td>
-                                            <td class="text-center">
-                                                <div class="label label-table label-info">Shipped</div>
-                                            </td>
-                                            <td class="text-center"><i class="fa fa-plane"></i> CGX0089934571</td>
-                                        </tr>
-                                        <tr>
-                                            <td><a href="#" class="btn-link"> Order #53434</a></td>
-                                            <td>Teresa L. Doe</td>
-                                            <td><span class="text-muted"><i
-                                                            class="fa fa-clock-o"></i> Oct 15, 2014</span></td>
-                                            <td>$77.99</td>
-                                            <td class="text-center">
-                                                <div class="label label-table label-info">Shipped</div>
-                                            </td>
-                                            <td class="text-center"><i class="fa fa-plane"></i> CGX0089734574</td>
-                                        </tr>
-                                        <tr>
-                                            <td><a href="#" class="btn-link"> Order #53435</a></td>
-                                            <td>Teresa L. Doe</td>
-                                            <td><span class="text-muted"><i
-                                                            class="fa fa-clock-o"></i> Oct 12, 2014</span></td>
-                                            <td>$18.00</td>
-                                            <td class="text-center">
-                                                <div class="label label-table label-success">Paid</div>
-                                            </td>
-                                            <td class="text-center">-</td>
-                                        </tr>
-                                        <tr>
-                                            <td><a href="#" class="btn-link">Order #53437</a></td>
-                                            <td>Charles S Boyle</td>
-                                            <td><span class="text-muted"><i
-                                                            class="fa fa-clock-o"></i> Oct 17, 2014</span></td>
-                                            <td>$658.00</td>
-                                            <td class="text-center">
-                                                <div class="label label-table label-danger">Refunded</div>
-                                            </td>
-                                            <td class="text-center">-</td>
-                                        </tr>
-                                        <tr>
-                                            <td><a href="#" class="btn-link">Order #536584</a></td>
-                                            <td>Scott S. Calabrese</td>
-                                            <td><span class="text-muted"><i
-                                                            class="fa fa-clock-o"></i> Oct 19, 2014</span></td>
-                                            <td>$45.58</td>
-                                            <td class="text-center">
-                                                <div class="label label-table label-warning">Unpaid</div>
-                                            </td>
-                                            <td class="text-center">-</td>
-                                        </tr>
-                                        </tbody>
-                                    </table>
+                            </div>
+                            <div class="panel">
+
+                                <!--Accordion title-->
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-parent="#accordion" data-toggle="collapse" href="#collapseTwo">设备号:2 设备名称:张江高科2号机房</a>
+                                    </h4>
                                 </div>
-                                <hr>
-                                <div class="pull-right">
-                                    <ul class="pagination text-nowrap mar-no">
-                                        <li class="page-pre disabled">
-                                            <a href="#">&lt;</a>
-                                        </li>
-                                        <li class="page-number active">
-                                            <span>1</span>
-                                        </li>
-                                        <li class="page-number">
-                                            <a href="#">2</a>
-                                        </li>
-                                        <li class="page-number">
-                                            <a href="#">3</a>
-                                        </li>
-                                        <li>
-                                            <span>...</span>
-                                        </li>
-                                        <li class="page-number">
-                                            <a href="#">9</a>
-                                        </li>
-                                        <li class="page-next">
-                                            <a href="#">&gt;</a>
-                                        </li>
-                                    </ul>
+
+                                <!--Accordion content-->
+                                <div class="panel-collapse collapse" id="collapseTwo">
+                                    <div class="panel-body">
+                                        <div class="alert alert-primary">
+                                            <div>
+                                                <h4>UPS</h4>
+                                                设备ID:123
+                                                状态:开启
+                                                厂家:富士通
+                                            </div>
+                                            <div>
+                                                <h4>蓄电池</h4>
+                                                设备ID:2
+                                                状态:正常使用
+                                                厂家:富士通
+                                                有效期:3年
+                                            </div>
+                                            <div>
+                                                <h4>蓄电池</h4>
+                                                设备ID:3
+                                                状态:电量不足
+                                                厂家:富士通
+                                                有效期:3年
+                                            </div>
+                                            <div>
+                                                <h4>蓄电池</h4>
+                                                设备ID:4
+                                                状态:正常使用
+                                                厂家:富士通
+                                                有效期:3年
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <!--===================================================-->
-                            <!--End Data Table-->
+                            <div class="panel">
 
+                                <!--Accordion title-->
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-parent="#accordion" data-toggle="collapse" href="#collapseThree">设备号:3 设备名称:张江高科3号机房</a>
+                                    </h4>
+                                </div>
+
+                                <!--Accordion content-->
+                                <div class="panel-collapse collapse" id="collapseThree">
+                                    <div class="panel-body">
+                                        <div class="alert alert-primary">
+                                            <div>
+                                                <h4>UPS</h4>
+                                                设备ID:123
+                                                状态:开启
+                                                厂家:富士通
+                                            </div>
+                                            <div>
+                                                <h4>蓄电池</h4>
+                                                设备ID:2
+                                                状态:正常使用
+                                                厂家:富士通
+                                                有效期:3年
+                                            </div>
+                                            <div>
+                                                <h4>蓄电池</h4>
+                                                设备ID:3
+                                                状态:电量不足
+                                                厂家:富士通
+                                                有效期:3年
+                                            </div>
+                                            <div>
+                                                <h4>蓄电池</h4>
+                                                设备ID:4
+                                                状态:正常使用
+                                                厂家:富士通
+                                                有效期:3年
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                        <!--===================================================-->
+                        <!--End Default Accordion-->
+
                     </div>
                 </div>
 
@@ -638,60 +479,96 @@
 
                             <ul id="mainnav-menu" class="list-group">
 
-                                <!--Category name-->
-                                <li class="list-header">Navigation</li>
-
-                                <!--Menu list item-->
                                 <li class="active-link">
-                                    <a href="index.html">
+                                    <a href="{{url('/')}}">
                                         <i class="demo-psi-home"></i>
                                         <span class="menu-title">
-												<strong>Dashboard</strong>
+												<strong>欢迎页</strong>
 											</span>
                                     </a>
                                 </li>
 
-                                <!--Menu list item-->
-                                <li>
-                                    <a href="#">
-                                        <i class="demo-psi-split-vertical-2"></i>
-                                        <span class="menu-title">
-												<strong>Layouts</strong>
-											</span>
-                                        <i class="arrow"></i>
-                                    </a>
-
-                                    <!--Submenu-->
-                                    <ul class="collapse">
-                                        <li><a href="layouts-collapsed-navigation.html">Collapsed Navigation</a></li>
-                                        <li><a href="layouts-offcanvas-navigation.html">Off-Canvas Navigation</a></li>
-                                        <li><a href="layouts-offcanvas-slide-in-navigation.html">Slide-in Navigation</a>
-                                        </li>
-                                        <li><a href="layouts-offcanvas-revealing-navigation.html">Revealing
-                                                Navigation</a></li>
-                                        <li class="list-divider"></li>
-                                        <li><a href="layouts-aside-right-side.html">Aside on the right side</a></li>
-                                        <li><a href="layouts-aside-left-side.html">Aside on the left side</a></li>
-                                        <li><a href="layouts-aside-dark-theme.html">Dark version of aside</a></li>
-                                        <li class="list-divider"></li>
-                                        <li><a href="layouts-fixed-navbar.html">Fixed Navbar</a></li>
-                                        <li><a href="layouts-fixed-footer.html">Fixed Footer</a></li>
-
-                                    </ul>
-                                </li>
-
-                                <!--Menu list item-->
+                                <li class="list-header">企业管理</li>
                                 <li>
                                     <a href="widgets.html">
                                         <i class="demo-psi-gear-2"></i>
                                         <span class="menu-title">
-												<strong>Widgets</strong>
-												<span class="pull-right badge badge-warning">24</span>
+												<strong>企业列表</strong>
 											</span>
                                     </a>
                                 </li>
-
+                                <li>
+                                    <a href="widgets.html">
+                                        <i class="demo-psi-gear-2"></i>
+                                        <span class="menu-title">
+												<strong>添加企业</strong>
+											</span>
+                                    </a>
+                                </li>
                                 <li class="list-divider"></li>
+
+                                <li class="list-header">电源管家管理</li>
+                                <li>
+                                    <a href="widgets.html">
+                                        <i class="demo-psi-gear-2"></i>
+                                        <span class="menu-title">
+												<strong>电源管家列表</strong>
+											</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="widgets.html">
+                                        <i class="demo-psi-gear-2"></i>
+                                        <span class="menu-title">
+												<strong>添加电源管家</strong>
+											</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="widgets.html">
+                                        <i class="demo-psi-gear-2"></i>
+                                        <span class="menu-title">
+												<strong>电源管家功能</strong>
+											</span>
+                                    </a>
+                                </li>
+                                <li class="list-divider"></li>
+
+                                <li class="list-header">系统设置</li>
+                                <li>
+                                    <a href="widgets.html">
+                                        <i class="demo-psi-gear-2"></i>
+                                        <span class="menu-title">
+												<strong>云服务IP</strong>
+											</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="widgets.html">
+                                        <i class="demo-psi-gear-2"></i>
+                                        <span class="menu-title">
+												<strong>短信设置</strong>
+											</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="widgets.html">
+                                        <i class="demo-psi-gear-2"></i>
+                                        <span class="menu-title">
+												<strong>短信列表</strong>
+											</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="widgets.html">
+                                        <i class="demo-psi-gear-2"></i>
+                                        <span class="menu-title">
+												<strong>告警通知</strong>
+											</span>
+                                    </a>
+                                </li>
+                                <li class="list-divider"></li>
+
                             </ul>
                         </div>
                     </div>
@@ -711,27 +588,7 @@
     <!--===================================================-->
     <footer id="footer">
 
-        <!-- Visible when footer positions are fixed -->
-        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-        <div class="show-fixed pull-right">
-            You have <a href="#" class="text-bold text-main"><span class="label label-danger">3</span> pending
-                action.</a>
-        </div>
-
-
-        <!-- Visible when footer positions are static -->
-        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-        <div class="hide-fixed pull-right pad-rgt">
-            14GB of <strong>512GB</strong> Free.
-        </div>
-
-
-        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-        <!-- Remove the class "show-fixed" and "hide-fixed" to make the content always appears. -->
-        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-
-        <p class="pad-lft">&#0169; 2016 Your Company</p>
-
+        <p class="pad-lft">&#0169; 2017 教学部A大队</p>
 
     </footer>
     <!--===================================================-->
@@ -749,12 +606,6 @@
 </div>
 <!--===================================================-->
 <!-- END OF CONTAINER -->
-
-
-<!-- SETTINGS - DEMO PURPOSE ONLY -->
-<!--===================================================-->
-<!--===================================================-->
-<!-- END SETTINGS -->
 
 
 </body>
