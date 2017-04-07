@@ -10,9 +10,6 @@
     <!--STYLESHEET-->
     <!--=================================================-->
 
-    <!--Open Sans Font [ OPTIONAL ]-->
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
-
 
     <!--Bootstrap Stylesheet [ REQUIRED ]-->
     <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet">
@@ -30,17 +27,12 @@
     <link href="{{asset('css/demo/nifty-demo.min.css')}}" rel="stylesheet">
 
 
-
     <!--Morris.js [ OPTIONAL ]-->
     <link href="{{asset('plugins/morris-js/morris.min.css')}}" rel="stylesheet">
 
 
     <!--Magic Checkbox [ OPTIONAL ]-->
     <link href="{{asset('plugins/magic-check/css/magic-check.min.css')}}" rel="stylesheet">
-
-
-
-
 
 
     <!--JAVASCRIPT-->
@@ -63,10 +55,6 @@
     <script src="{{asset('js/nifty.min.js')}}"></script>
 
 
-
-
-
-
     <!--=================================================-->
 
     <!--Demo script [ DEMONSTRATION ]-->
@@ -83,8 +71,7 @@
 
 
     <!--Specify page [ SAMPLE ]-->
-{{--    <script src="{{asset('js/demo/dashboard.js')}}"></script>--}}
-
+    {{--    <script src="{{asset('js/demo/dashboard.js')}}"></script>--}}
 
 
 </head>
@@ -102,10 +89,10 @@
             <!--Brand logo & name-->
             <!--================================-->
             <div class="navbar-header">
-                <a href="index.html" class="navbar-brand">
+                <a href="{{url('/')}}" class="navbar-brand">
                     <img src="img/logo.png" alt="Nifty Logo" class="brand-icon">
                     <div class="brand-title">
-                        <span class="brand-text">Nifty</span>
+                        <span class="brand-text">电源管家</span>
                     </div>
                 </a>
             </div>
@@ -127,7 +114,6 @@
                     </li>
                     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                     <!--End Navigation toogle button-->
-
 
 
                     <!--Notification dropdown-->
@@ -235,7 +221,8 @@
                                         <li class="bg-gray">
                                             <a class="media" href="#">
                                                 <div class="media-left">
-                                                    <img class="img-circle img-sm" alt="Profile Picture" src="img/profile-photos/9.png">
+                                                    <img class="img-circle img-sm" alt="Profile Picture"
+                                                         src="img/profile-photos/9.png">
                                                 </div>
                                                 <div class="media-body">
                                                     <div class="text-nowrap">Lucy sent you a message</div>
@@ -248,7 +235,8 @@
                                         <li class="bg-gray">
                                             <a class="media" href="#">
                                                 <div class="media-left">
-                                                    <img class="img-circle img-sm" alt="Profile Picture" src="img/profile-photos/3.png">
+                                                    <img class="img-circle img-sm" alt="Profile Picture"
+                                                         src="img/profile-photos/3.png">
                                                 </div>
                                                 <div class="media-body">
                                                     <div class="text-nowrap">Jackson sent you a message</div>
@@ -270,121 +258,6 @@
                     </li>
                     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                     <!--End notifications dropdown-->
-
-
-
-                    <!--Mega dropdown-->
-                    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-                    <li class="mega-dropdown">
-                        <a href="#" class="mega-dropdown-toggle">
-                            <i class="demo-pli-layout-grid"></i>
-                        </a>
-                        <div class="dropdown-menu mega-dropdown-menu">
-                            <div class="row">
-                                <div class="col-sm-4 col-md-3">
-
-                                    <!--Mega menu list-->
-                                    <ul class="list-unstyled">
-                                        <li class="dropdown-header"><i class="demo-pli-file icon-fw"></i> Pages</li>
-                                        <li><a href="#">Profile</a></li>
-                                        <li><a href="#">Search Result</a></li>
-                                        <li><a href="#">FAQ</a></li>
-                                        <li><a href="#">Sreen Lock</a></li>
-                                        <li><a href="#" class="disabled">Disabled</a></li>                                        </ul>
-
-                                </div>
-                                <div class="col-sm-4 col-md-3">
-
-                                    <!--Mega menu list-->
-                                    <ul class="list-unstyled">
-                                        <li class="dropdown-header"><i class="demo-pli-mail icon-fw"></i> Mailbox</li>
-                                        <li><a href="#"><span class="pull-right label label-danger">Hot</span>Indox</a></li>
-                                        <li><a href="#">Read Message</a></li>
-                                        <li><a href="#">Compose</a></li>
-                                    </ul>
-                                    <p class="pad-top mar-top bord-top text-sm">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
-                                </div>
-                                <div class="col-sm-4 col-md-3">
-                                    <!--Mega menu list-->
-                                    <ul class="list-unstyled">
-                                        <li>
-                                            <a href="#" class="media mar-btm">
-                                                <span class="badge badge-success pull-right">90%</span>
-                                                <div class="media-left">
-                                                    <i class="demo-pli-data-settings icon-2x"></i>
-                                                </div>
-                                                <div class="media-body">
-                                                    <p class="text-semibold text-dark mar-no">Data Backup</p>
-                                                    <small class="text-muted">This is the item description</small>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="media mar-btm">
-                                                <div class="media-left">
-                                                    <i class="demo-pli-support icon-2x"></i>
-                                                </div>
-                                                <div class="media-body">
-                                                    <p class="text-semibold text-dark mar-no">Support</p>
-                                                    <small class="text-muted">This is the item description</small>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="media mar-btm">
-                                                <div class="media-left">
-                                                    <i class="demo-pli-computer-secure icon-2x"></i>
-                                                </div>
-                                                <div class="media-body">
-                                                    <p class="text-semibold text-dark mar-no">Security</p>
-                                                    <small class="text-muted">This is the item description</small>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="media mar-btm">
-                                                <div class="media-left">
-                                                    <i class="demo-pli-map-2 icon-2x"></i>
-                                                </div>
-                                                <div class="media-body">
-                                                    <p class="text-semibold text-dark mar-no">Location</p>
-                                                    <small class="text-muted">This is the item description</small>
-                                                </div>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="col-sm-12 col-md-3">
-                                    <p class="dropdown-header"><i class="demo-pli-file-jpg icon-fw"></i> Gallery</p>
-                                    <ul class="list-unstyled list-inline text-justify">
-
-                                        <li class="pad-btm">
-                                            <img src="img//thumbs/mega-menu-2.jpg" alt="thumbs">
-                                        </li>
-                                        <li class="pad-btm">
-                                            <img src="img//thumbs/mega-menu-3.jpg" alt="thumbs">
-                                        </li>
-                                        <li class="pad-btm">
-                                            <img src="img//thumbs/mega-menu-1.jpg" alt="thumbs">
-                                        </li>
-                                        <li class="pad-btm">
-                                            <img src="img//thumbs/mega-menu-4.jpg" alt="thumbs">
-                                        </li>
-                                        <li class="pad-btm">
-                                            <img src="img//thumbs/mega-menu-5.jpg" alt="thumbs">
-                                        </li>
-                                        <li class="pad-btm">
-                                            <img src="img//thumbs/mega-menu-6.jpg" alt="thumbs">
-                                        </li>
-                                    </ul>
-                                    <a href="#" class="btn btn-sm btn-block btn-default">Browse Gallery</a>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-                    <!--End mega dropdown-->
-
                 </ul>
                 <ul class="nav navbar-top-links pull-right">
 
@@ -443,7 +316,6 @@
                     </li>
                     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                     <!--End language selector-->
-
 
 
                     <!--User dropdown-->
@@ -512,12 +384,6 @@
                     </li>
                     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                     <!--End user dropdown-->
-
-                    <li>
-                        <a href="#" class="aside-toggle navbar-aside-icon">
-                            <i class="pci-ver-dots"></i>
-                        </a>
-                    </li>
                 </ul>
             </div>
             <!--================================-->
@@ -557,8 +423,6 @@
             <div id="page-content">
 
 
-
-
                 <div class="row">
                     <div class="col-xs-12">
                         <div class="panel">
@@ -572,21 +436,27 @@
                                 <div class="pad-btm form-inline">
                                     <div class="row">
                                         <div class="col-sm-6 table-toolbar-left">
-                                            <button class="btn btn-purple"><i class="demo-pli-add icon-fw"></i>Add</button>
+                                            <button class="btn btn-purple"><i class="demo-pli-add icon-fw"></i>Add
+                                            </button>
                                             <button class="btn btn-default"><i class="demo-pli-printer"></i></button>
                                             <div class="btn-group">
-                                                <button class="btn btn-default"><i class="demo-pli-information"></i></button>
-                                                <button class="btn btn-default"><i class="demo-pli-recycling"></i></button>
+                                                <button class="btn btn-default"><i class="demo-pli-information"></i>
+                                                </button>
+                                                <button class="btn btn-default"><i class="demo-pli-recycling"></i>
+                                                </button>
                                             </div>
                                         </div>
                                         <div class="col-sm-6 table-toolbar-right">
                                             <div class="form-group">
-                                                <input type="text" autocomplete="off" class="form-control" placeholder="Search" id="demo-input-search2">
+                                                <input type="text" autocomplete="off" class="form-control"
+                                                       placeholder="Search" id="demo-input-search2">
                                             </div>
                                             <div class="btn-group">
-                                                <button class="btn btn-default"><i class="demo-pli-download-from-cloud"></i></button>
+                                                <button class="btn btn-default"><i
+                                                            class="demo-pli-download-from-cloud"></i></button>
                                                 <div class="btn-group">
-                                                    <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                                    <button class="btn btn-default dropdown-toggle"
+                                                            data-toggle="dropdown">
                                                         <i class="demo-pli-gear"></i>
                                                         <span class="caret"></span>
                                                     </button>
@@ -618,7 +488,8 @@
                                         <tr>
                                             <td><a href="#" class="btn-link"> Order #53431</a></td>
                                             <td>Steve N. Horton</td>
-                                            <td><span class="text-muted"><i class="fa fa-clock-o"></i> Oct 22, 2014</span></td>
+                                            <td><span class="text-muted"><i
+                                                            class="fa fa-clock-o"></i> Oct 22, 2014</span></td>
                                             <td>$45.00</td>
                                             <td class="text-center">
                                                 <div class="label label-table label-success">Paid</div>
@@ -628,7 +499,8 @@
                                         <tr>
                                             <td><a href="#" class="btn-link"> Order #53432</a></td>
                                             <td>Charles S Boyle</td>
-                                            <td><span class="text-muted"><i class="fa fa-clock-o"></i> Oct 24, 2014</span></td>
+                                            <td><span class="text-muted"><i
+                                                            class="fa fa-clock-o"></i> Oct 24, 2014</span></td>
                                             <td>$245.30</td>
                                             <td class="text-center">
                                                 <div class="label label-table label-info">Shipped</div>
@@ -638,7 +510,8 @@
                                         <tr>
                                             <td><a href="#" class="btn-link"> Order #53433</a></td>
                                             <td>Lucy Doe</td>
-                                            <td><span class="text-muted"><i class="fa fa-clock-o"></i> Oct 24, 2014</span></td>
+                                            <td><span class="text-muted"><i
+                                                            class="fa fa-clock-o"></i> Oct 24, 2014</span></td>
                                             <td>$38.00</td>
                                             <td class="text-center">
                                                 <div class="label label-table label-info">Shipped</div>
@@ -648,7 +521,8 @@
                                         <tr>
                                             <td><a href="#" class="btn-link"> Order #53434</a></td>
                                             <td>Teresa L. Doe</td>
-                                            <td><span class="text-muted"><i class="fa fa-clock-o"></i> Oct 15, 2014</span></td>
+                                            <td><span class="text-muted"><i
+                                                            class="fa fa-clock-o"></i> Oct 15, 2014</span></td>
                                             <td>$77.99</td>
                                             <td class="text-center">
                                                 <div class="label label-table label-info">Shipped</div>
@@ -658,7 +532,8 @@
                                         <tr>
                                             <td><a href="#" class="btn-link"> Order #53435</a></td>
                                             <td>Teresa L. Doe</td>
-                                            <td><span class="text-muted"><i class="fa fa-clock-o"></i> Oct 12, 2014</span></td>
+                                            <td><span class="text-muted"><i
+                                                            class="fa fa-clock-o"></i> Oct 12, 2014</span></td>
                                             <td>$18.00</td>
                                             <td class="text-center">
                                                 <div class="label label-table label-success">Paid</div>
@@ -668,7 +543,8 @@
                                         <tr>
                                             <td><a href="#" class="btn-link">Order #53437</a></td>
                                             <td>Charles S Boyle</td>
-                                            <td><span class="text-muted"><i class="fa fa-clock-o"></i> Oct 17, 2014</span></td>
+                                            <td><span class="text-muted"><i
+                                                            class="fa fa-clock-o"></i> Oct 17, 2014</span></td>
                                             <td>$658.00</td>
                                             <td class="text-center">
                                                 <div class="label label-table label-danger">Refunded</div>
@@ -678,7 +554,8 @@
                                         <tr>
                                             <td><a href="#" class="btn-link">Order #536584</a></td>
                                             <td>Scott S. Calabrese</td>
-                                            <td><span class="text-muted"><i class="fa fa-clock-o"></i> Oct 19, 2014</span></td>
+                                            <td><span class="text-muted"><i
+                                                            class="fa fa-clock-o"></i> Oct 19, 2014</span></td>
                                             <td>$45.58</td>
                                             <td class="text-center">
                                                 <div class="label label-table label-warning">Unpaid</div>
@@ -723,7 +600,6 @@
                 </div>
 
 
-
             </div>
             <!--===================================================-->
             <!--End page content-->
@@ -732,288 +608,6 @@
         </div>
         <!--===================================================-->
         <!--END CONTENT CONTAINER-->
-
-
-
-        <!--ASIDE-->
-        <!--===================================================-->
-        <aside id="aside-container">
-            <div id="aside">
-                <div class="nano">
-                    <div class="nano-content">
-
-                        <!--Nav tabs-->
-                        <!--================================-->
-                        <ul class="nav nav-tabs nav-justified">
-                            <li class="active">
-                                <a href="#demo-asd-tab-1" data-toggle="tab">
-                                    <i class="demo-pli-speech-bubble-7"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#demo-asd-tab-2" data-toggle="tab">
-                                    <i class="demo-pli-information icon-fw"></i> Report
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#demo-asd-tab-3" data-toggle="tab">
-                                    <i class="demo-pli-wrench icon-fw"></i> Settings
-                                </a>
-                            </li>
-                        </ul>
-                        <!--================================-->
-                        <!--End nav tabs-->
-
-
-
-                        <!-- Tabs Content -->
-                        <!--================================-->
-                        <div class="tab-content">
-
-                            <!--First tab (Contact list)-->
-                            <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-                            <div class="tab-pane fade in active" id="demo-asd-tab-1">
-                                <p class="pad-hor mar-top text-semibold text-main">
-                                    <span class="pull-right badge badge-warning">3</span> Family
-                                </p>
-
-                                <!--Family-->
-                                <div class="list-group bg-trans">
-                                    <a href="#" class="list-group-item">
-                                        <div class="media-left pos-rel">
-                                            <img class="img-circle img-xs" src="img/profile-photos/2.png" alt="Profile Picture">
-                                            <i class="badge badge-success badge-stat badge-icon pull-left"></i>
-                                        </div>
-                                        <div class="media-body">
-                                            <p class="mar-no">Stephen Tran</p>
-                                            <small class="text-muted">Availabe</small>
-                                        </div>
-                                    </a>
-                                    <a href="#" class="list-group-item">
-                                        <div class="media-left pos-rel">
-                                            <img class="img-circle img-xs" src="img/profile-photos/7.png" alt="Profile Picture">
-                                        </div>
-                                        <div class="media-body">
-                                            <p class="mar-no">Brittany Meyer</p>
-                                            <small class="text-muted">I think so</small>
-                                        </div>
-                                    </a>
-                                    <a href="#" class="list-group-item">
-                                        <div class="media-left pos-rel">
-                                            <img class="img-circle img-xs" src="img/profile-photos/1.png" alt="Profile Picture">
-                                            <i class="badge badge-info badge-stat badge-icon pull-left"></i>
-                                        </div>
-                                        <div class="media-body">
-                                            <p class="mar-no">Jack George</p>
-                                            <small class="text-muted">Last Seen 2 hours ago</small>
-                                        </div>
-                                    </a>
-                                    <a href="#" class="list-group-item">
-                                        <div class="media-left pos-rel">
-                                            <img class="img-circle img-xs" src="img/profile-photos/4.png" alt="Profile Picture">
-                                        </div>
-                                        <div class="media-body">
-                                            <p class="mar-no">Donald Brown</p>
-                                            <small class="text-muted">Lorem ipsum dolor sit amet.</small>
-                                        </div>
-                                    </a>
-                                    <a href="#" class="list-group-item">
-                                        <div class="media-left pos-rel">
-                                            <img class="img-circle img-xs" src="img/profile-photos/8.png" alt="Profile Picture">
-                                            <i class="badge badge-warning badge-stat badge-icon pull-left"></i>
-                                        </div>
-                                        <div class="media-body">
-                                            <p class="mar-no">Betty Murphy</p>
-                                            <small class="text-muted">Idle</small>
-                                        </div>
-                                    </a>
-                                    <a href="#" class="list-group-item">
-                                        <div class="media-left pos-rel">
-                                            <img class="img-circle img-xs" src="img/profile-photos/9.png" alt="Profile Picture">
-                                            <i class="badge badge-danger badge-stat badge-icon pull-left"></i>
-                                        </div>
-                                        <div class="media-body">
-                                            <p class="mar-no">Samantha Reid</p>
-                                            <small class="text-muted">Offline</small>
-                                        </div>
-                                    </a>
-                                </div>
-
-                                <hr>
-                                <p class="pad-hor text-semibold text-main">
-                                    <span class="pull-right badge badge-success">Offline</span> Friends
-                                </p>
-
-                                <!--Works-->
-                                <div class="list-group bg-trans">
-                                    <a href="#" class="list-group-item">
-                                        <span class="badge badge-purple badge-icon badge-fw pull-left"></span> Joey K. Greyson
-                                    </a>
-                                    <a href="#" class="list-group-item">
-                                        <span class="badge badge-info badge-icon badge-fw pull-left"></span> Andrea Branden
-                                    </a>
-                                    <a href="#" class="list-group-item">
-                                        <span class="badge badge-success badge-icon badge-fw pull-left"></span> Johny Juan
-                                    </a>
-                                    <a href="#" class="list-group-item">
-                                        <span class="badge badge-danger badge-icon badge-fw pull-left"></span> Susan Sun
-                                    </a>
-                                </div>
-
-
-                                <hr>
-                                <p class="pad-hor mar-top text-semibold text-main">News</p>
-
-                                <div class="pad-hor">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetuer
-                                        <a data-title="45%" class="add-tooltip text-semibold" href="#">adipiscing elit</a>, sed diam nonummy nibh. Lorem ipsum dolor sit amet.
-                                    </p>
-                                    <small class="text-muted"><em>Last Update : Des 12, 2014</em></small>
-                                </div>
-
-
-                            </div>
-                            <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-                            <!--End first tab (Contact list)-->
-
-
-                            <!--Second tab (Custom layout)-->
-                            <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-                            <div class="tab-pane fade" id="demo-asd-tab-2">
-
-                                <!--Monthly billing-->
-                                <div class="pad-all">
-                                    <p class="text-semibold text-main">Billing &amp; reports</p>
-                                    <p class="text-muted">Get <strong>$5.00</strong> off your next bill by making sure your full payment reaches us before August 5, 2016.</p>
-                                </div>
-                                <hr class="new-section-xs">
-                                <div class="pad-all">
-                                    <span class="text-semibold text-main">Amount Due On</span>
-                                    <p class="text-muted text-sm">August 17, 2016</p>
-                                    <p class="text-2x text-thin text-main">$83.09</p>
-                                    <button class="btn btn-block btn-success mar-top">Pay Now</button>
-                                </div>
-
-
-                                <hr>
-
-                                <p class="pad-hor text-semibold text-main">Additional Actions</p>
-
-                                <!--Simple Menu-->
-                                <div class="list-group bg-trans">
-                                    <a href="#" class="list-group-item"><i class="demo-pli-information icon-lg icon-fw"></i> Service Information</a>
-                                    <a href="#" class="list-group-item"><i class="demo-pli-mine icon-lg icon-fw"></i> Usage Profile</a>
-                                    <a href="#" class="list-group-item"><span class="label label-info pull-right">New</span><i class="demo-pli-credit-card-2 icon-lg icon-fw"></i> Payment Options</a>
-                                    <a href="#" class="list-group-item"><i class="demo-pli-support icon-lg icon-fw"></i> Message Center</a>
-                                </div>
-
-
-                                <hr>
-
-                                <div class="text-center">
-                                    <div><i class="demo-pli-old-telephone icon-3x"></i></div>
-                                    Questions?
-                                    <p class="text-lg text-semibold text-main"> (415) 234-53454 </p>
-                                    <small><em>We are here 24/7</em></small>
-                                </div>
-                            </div>
-                            <!--End second tab (Custom layout)-->
-                            <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-
-                            <!--Third tab (Settings)-->
-                            <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-                            <div class="tab-pane fade" id="demo-asd-tab-3">
-                                <ul class="list-group bg-trans">
-                                    <li class="pad-top list-header">
-                                        <p class="text-semibold text-main mar-no">Account Settings</p>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <div class="pull-right">
-                                            <input class="toggle-switch" id="demo-switch-1" type="checkbox" checked>
-                                            <label for="demo-switch-1"></label>
-                                        </div>
-                                        <p class="mar-no">Show my personal status</p>
-                                        <small class="text-muted">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</small>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <div class="pull-right">
-                                            <input class="toggle-switch" id="demo-switch-2" type="checkbox" checked>
-                                            <label for="demo-switch-2"></label>
-                                        </div>
-                                        <p class="mar-no">Show offline contact</p>
-                                        <small class="text-muted">Aenean commodo ligula eget dolor. Aenean massa.</small>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <div class="pull-right">
-                                            <input class="toggle-switch" id="demo-switch-3" type="checkbox">
-                                            <label for="demo-switch-3"></label>
-                                        </div>
-                                        <p class="mar-no">Invisible mode </p>
-                                        <small class="text-muted">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </small>
-                                    </li>
-                                </ul>
-
-
-                                <hr>
-
-                                <ul class="list-group pad-btm bg-trans">
-                                    <li class="list-header"><p class="text-semibold text-main mar-no">Public Settings</p></li>
-                                    <li class="list-group-item">
-                                        <div class="pull-right">
-                                            <input class="toggle-switch" id="demo-switch-4" type="checkbox" checked>
-                                            <label for="demo-switch-4"></label>
-                                        </div>
-                                        Online status
-                                    </li>
-                                    <li class="list-group-item">
-                                        <div class="pull-right">
-                                            <input class="toggle-switch" id="demo-switch-5" type="checkbox" checked>
-                                            <label for="demo-switch-5"></label>
-                                        </div>
-                                        Show offline contact
-                                    </li>
-                                    <li class="list-group-item">
-                                        <div class="pull-right">
-                                            <input class="toggle-switch" id="demo-switch-6" type="checkbox" checked>
-                                            <label for="demo-switch-6"></label>
-                                        </div>
-                                        Show my device icon
-                                    </li>
-                                </ul>
-
-
-
-                                <hr>
-
-                                <p class="pad-hor text-semibold text-main mar-no">Task Progress</p>
-                                <div class="pad-all">
-                                    <p>Upgrade Progress</p>
-                                    <div class="progress progress-sm">
-                                        <div class="progress-bar progress-bar-success" style="width: 15%;"><span class="sr-only">15%</span></div>
-                                    </div>
-                                    <small class="text-muted">15% Completed</small>
-                                </div>
-                                <div class="pad-hor">
-                                    <p>Database</p>
-                                    <div class="progress progress-sm">
-                                        <div class="progress-bar progress-bar-danger" style="width: 75%;"><span class="sr-only">75%</span></div>
-                                    </div>
-                                    <small class="text-muted">17/23 Database</small>
-                                </div>
-
-                            </div>
-                            <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-                            <!--Third tab (Settings)-->
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </aside>
-        <!--===================================================-->
-        <!--END ASIDE-->
-
 
         <!--MAIN NAVIGATION-->
         <!--===================================================-->
@@ -1031,63 +625,16 @@
                             <div id="mainnav-profile" class="mainnav-profile">
                                 <div class="profile-wrap">
                                     <div class="pad-btm">
-                                        <span class="label label-success pull-right">New</span>
-                                        <img class="img-circle img-sm img-border" src="img/profile-photos/1.png" alt="Profile Picture">
+                                        <img class="img-circle img-sm img-border" src="img/profile-photos/1.png"
+                                             alt="Profile Picture">
                                     </div>
-                                    <a href="#profile-nav" class="box-block" data-toggle="collapse" aria-expanded="false">
-                                            <span class="pull-right dropdown-toggle">
-                                                <i class="dropdown-caret"></i>
-                                            </span>
-                                        <p class="mnp-name">Aaron Chavez</p>
-                                        <span class="mnp-desc">aaron.cha@themeon.net</span>
-                                    </a>
-                                </div>
-                                <div id="profile-nav" class="collapse list-group bg-trans">
-                                    <a href="#" class="list-group-item">
-                                        <i class="demo-pli-male icon-lg icon-fw"></i> View Profile
-                                    </a>
-                                    <a href="#" class="list-group-item">
-                                        <i class="demo-pli-gear icon-lg icon-fw"></i> Settings
-                                    </a>
-                                    <a href="#" class="list-group-item">
-                                        <i class="demo-pli-information icon-lg icon-fw"></i> Help
-                                    </a>
-                                    <a href="#" class="list-group-item">
-                                        <i class="demo-pli-unlock icon-lg icon-fw"></i> Logout
+                                    <a href="#profile-nav" class="box-block" data-toggle="collapse"
+                                       aria-expanded="false">
+                                        <p class="mnp-name">年轻而且有才</p>
+                                        <span class="mnp-desc">773999579@qq.com</span>
                                     </a>
                                 </div>
                             </div>
-
-
-                            <!--Shortcut buttons-->
-                            <!--================================-->
-                            <div id="mainnav-shortcut">
-                                <ul class="list-unstyled">
-                                    <li class="col-xs-3" data-content="My Profile">
-                                        <a class="shortcut-grid" href="#">
-                                            <i class="demo-psi-male"></i>
-                                        </a>
-                                    </li>
-                                    <li class="col-xs-3" data-content="Messages">
-                                        <a class="shortcut-grid" href="#">
-                                            <i class="demo-psi-speech-bubble-3"></i>
-                                        </a>
-                                    </li>
-                                    <li class="col-xs-3" data-content="Activity">
-                                        <a class="shortcut-grid" href="#">
-                                            <i class="demo-psi-thunder"></i>
-                                        </a>
-                                    </li>
-                                    <li class="col-xs-3" data-content="Lock Screen">
-                                        <a class="shortcut-grid" href="#">
-                                            <i class="demo-psi-lock-2"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!--================================-->
-                            <!--End shortcut buttons-->
-
 
                             <ul id="mainnav-menu" class="list-group">
 
@@ -1118,8 +665,10 @@
                                     <ul class="collapse">
                                         <li><a href="layouts-collapsed-navigation.html">Collapsed Navigation</a></li>
                                         <li><a href="layouts-offcanvas-navigation.html">Off-Canvas Navigation</a></li>
-                                        <li><a href="layouts-offcanvas-slide-in-navigation.html">Slide-in Navigation</a></li>
-                                        <li><a href="layouts-offcanvas-revealing-navigation.html">Revealing Navigation</a></li>
+                                        <li><a href="layouts-offcanvas-slide-in-navigation.html">Slide-in Navigation</a>
+                                        </li>
+                                        <li><a href="layouts-offcanvas-revealing-navigation.html">Revealing
+                                                Navigation</a></li>
                                         <li class="list-divider"></li>
                                         <li><a href="layouts-aside-right-side.html">Aside on the right side</a></li>
                                         <li><a href="layouts-aside-left-side.html">Aside on the left side</a></li>
@@ -1143,278 +692,7 @@
                                 </li>
 
                                 <li class="list-divider"></li>
-
-                                <!--Category name-->
-                                <li class="list-header">Components</li>
-
-                                <!--Menu list item-->
-                                <li>
-                                    <a href="#">
-                                        <i class="demo-psi-boot-2"></i>
-                                        <span class="menu-title">UI Elements</span>
-                                        <i class="arrow"></i>
-                                    </a>
-
-                                    <!--Submenu-->
-                                    <ul class="collapse">
-                                        <li><a href="ui-buttons.html">Buttons</a></li>
-                                        <li><a href="ui-panels.html">Panels</a></li>
-                                        <li><a href="ui-modals.html">Modals</a></li>
-                                        <li><a href="ui-progress-bars.html">Progress bars</a></li>
-                                        <li><a href="ui-components.html">Components</a></li>
-                                        <li><a href="ui-typography.html">Typography</a></li>
-                                        <li><a href="ui-list-group.html">List Group</a></li>
-                                        <li><a href="ui-tabs-accordions.html">Tabs &amp; Accordions</a></li>
-                                        <li><a href="ui-alerts-tooltips.html">Alerts &amp; Tooltips</a></li>
-
-                                    </ul>
-                                </li>
-
-                                <!--Menu list item-->
-                                <li>
-                                    <a href="#">
-                                        <i class="demo-psi-pen-5"></i>
-                                        <span class="menu-title">Forms</span>
-                                        <i class="arrow"></i>
-                                    </a>
-
-                                    <!--Submenu-->
-                                    <ul class="collapse">
-                                        <li><a href="forms-general.html">General</a></li>
-                                        <li><a href="forms-components.html">Advanced Components</a></li>
-                                        <li><a href="forms-validation.html">Validation</a></li>
-                                        <li><a href="forms-wizard.html">Wizard</a></li>
-                                        <li><a href="forms-file-upload.html">File Upload</a></li>
-                                        <li><a href="forms-text-editor.html">Text Editor</a></li>
-                                        <li><a href="forms-markdown.html">Markdown</a></li>
-
-                                    </ul>
-                                </li>
-
-                                <!--Menu list item-->
-                                <li>
-                                    <a href="#">
-                                        <i class="demo-psi-receipt-4"></i>
-                                        <span class="menu-title">Tables</span>
-                                        <i class="arrow"></i>
-                                    </a>
-
-                                    <!--Submenu-->
-                                    <ul class="collapse">
-                                        <li><a href="tables-static.html">Static Tables</a></li>
-                                        <li><a href="tables-bootstrap.html">Bootstrap Tables</a></li>
-                                        <li><a href="tables-datatable.html">Data Tables</a></li>
-                                        <li><a href="tables-footable.html">Foo Tables</a></li>
-
-                                    </ul>
-                                </li>
-
-                                <!--Menu list item-->
-                                <li>
-                                    <a href="charts.html">
-                                        <i class="demo-psi-bar-chart"></i>
-                                        <span class="menu-title">Charts</span>
-                                    </a>
-                                </li>
-
-                                <li class="list-divider"></li>
-
-                                <!--Category name-->
-                                <li class="list-header">More</li>
-
-                                <!--Menu list item-->
-                                <li>
-                                    <a href="#">
-                                        <i class="demo-psi-repair"></i>
-                                        <span class="menu-title">Miscellaneous</span>
-                                        <i class="arrow"></i>
-                                    </a>
-
-                                    <!--Submenu-->
-                                    <ul class="collapse">
-                                        <li><a href="misc-timeline.html">Timeline</a></li>
-                                        <li><a href="misc-calendar.html">Calendar</a></li>
-                                        <li><a href="misc-maps.html">Google Maps</a></li>
-
-                                    </ul>
-                                </li>
-
-                                <!--Menu list item-->
-                                <li>
-                                    <a href="#">
-                                        <i class="demo-psi-mail"></i>
-                                        <span class="menu-title">Email</span>
-                                        <i class="arrow"></i>
-                                    </a>
-
-                                    <!--Submenu-->
-                                    <ul class="collapse">
-                                        <li><a href="mailbox.html">Inbox</a></li>
-                                        <li><a href="mailbox-message.html">View Message</a></li>
-                                        <li><a href="mailbox-compose.html">Compose Message</a></li>
-                                        <li><a href="mailbox-templates.html">Email Templates<span class="label label-info pull-right">New</span></a></li>
-
-                                    </ul>
-                                </li>
-
-                                <!--Menu list item-->
-                                <li>
-                                    <a href="#">
-                                        <i class="demo-psi-file-html"></i>
-                                        <span class="menu-title">Pages</span>
-                                        <i class="arrow"></i>
-                                    </a>
-
-                                    <!--Submenu-->
-                                    <ul class="collapse">
-                                        <li><a href="pages-blank.html">Blank Page</a></li>
-                                        <li><a href="pages-profile.html">Profile</a></li>
-                                        <li><a href="pages-search-results.html">Search Results</a></li>
-                                        <li><a href="pages-faq.html">FAQ</a></li>
-                                        <li class="list-divider"></li>
-                                        <li><a href="pages-404.html">404 Error</a></li>
-                                        <li><a href="pages-500.html">500 Error</a></li>
-                                        <li class="list-divider"></li>
-                                        <li><a href="pages-login.html">Login</a></li>
-                                        <li><a href="pages-register.html">Register</a></li>
-                                        <li><a href="pages-password-reminder.html">Password Reminder</a></li>
-                                        <li><a href="pages-lock-screen.html">Lock Screen</a></li>
-
-                                    </ul>
-                                </li>
-
-
-                                <!--Menu list item-->
-                                <li>
-                                    <a href="#">
-                                        <i class="demo-psi-tactic"></i>
-                                        <span class="menu-title">Menu Level</span>
-                                        <i class="arrow"></i>
-                                    </a>
-
-                                    <!--Submenu-->
-                                    <ul class="collapse">
-                                        <li><a href="#">Second Level Item</a></li>
-                                        <li><a href="#">Second Level Item</a></li>
-                                        <li><a href="#">Second Level Item</a></li>
-                                        <li class="list-divider"></li>
-                                        <li>
-                                            <a href="#">Third Level<i class="arrow"></i></a>
-
-                                            <!--Submenu-->
-                                            <ul class="collapse">
-                                                <li><a href="#">Third Level Item</a></li>
-                                                <li><a href="#">Third Level Item</a></li>
-                                                <li><a href="#">Third Level Item</a></li>
-                                                <li><a href="#">Third Level Item</a></li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <a href="#">Third Level<i class="arrow"></i></a>
-
-                                            <!--Submenu-->
-                                            <ul class="collapse">
-                                                <li><a href="#">Third Level Item</a></li>
-                                                <li><a href="#">Third Level Item</a></li>
-                                                <li><a href="#">Third Level Item</a></li>
-                                                <li class="list-divider"></li>
-                                                <li><a href="#">Third Level Item</a></li>
-                                                <li><a href="#">Third Level Item</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-
-
-                                <li class="list-divider"></li>
-
-                                <!--Category name-->
-                                <li class="list-header">Extras</li>
-
-                                <!--Menu list item-->
-                                <li>
-                                    <a href="#">
-                                        <i class="demo-psi-happy"></i>
-                                        <span class="menu-title">Icons Pack</span>
-                                        <i class="arrow"></i>
-                                    </a>
-
-                                    <!--Submenu-->
-                                    <ul class="collapse">
-                                        <li><a href="icons-ionicons.html">Ion Icons</a></li>
-                                        <li><a href="icons-themify.html">Themify</a></li>
-                                        <li><a href="icons-font-awesome.html">Font Awesome</a></li>
-
-                                    </ul>
-                                </li>
-
-                                <!--Menu list item-->
-                                <li>
-                                    <a href="#">
-                                        <i class="demo-psi-medal-2"></i>
-                                        <span class="menu-title">
-												PREMIUM ICONS
-												<span class="label label-danger pull-right">BEST</span>
-											</span>
-                                    </a>
-
-                                    <!--Submenu-->
-                                    <ul class="collapse">
-                                        <li><a href="premium-line-icons.html">Line Icons Pack</a></li>
-                                        <li><a href="premium-solid-icons.html">Solid Icons Pack</a></li>
-
-                                    </ul>
-                                </li>
-
-                                <!--Menu list item-->
-                                <li>
-                                    <a href="helper-classes.html">
-                                        <i class="demo-psi-inbox-full"></i>
-                                        <span class="menu-title">Helper Classes</span>
-                                    </a>
-                                </li>                                </ul>
-
-
-                            <!--Widget-->
-                            <!--================================-->
-                            <div class="mainnav-widget">
-
-                                <!-- Show the button on collapsed navigation -->
-                                <div class="show-small">
-                                    <a href="#" data-toggle="menu-widget" data-target="#demo-wg-server">
-                                        <i class="demo-pli-monitor-2"></i>
-                                    </a>
-                                </div>
-
-                                <!-- Hide the content on collapsed navigation -->
-                                <div id="demo-wg-server" class="hide-small mainnav-widget-content">
-                                    <ul class="list-group">
-                                        <li class="list-header pad-no pad-ver">Server Status</li>
-                                        <li class="mar-btm">
-                                            <span class="label label-primary pull-right">15%</span>
-                                            <p>CPU Usage</p>
-                                            <div class="progress progress-sm">
-                                                <div class="progress-bar progress-bar-primary" style="width: 15%;">
-                                                    <span class="sr-only">15%</span>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="mar-btm">
-                                            <span class="label label-purple pull-right">75%</span>
-                                            <p>Bandwidth</p>
-                                            <div class="progress progress-sm">
-                                                <div class="progress-bar progress-bar-purple" style="width: 75%;">
-                                                    <span class="sr-only">75%</span>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="pad-ver"><a href="#" class="btn btn-success btn-bock">View Details</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <!--================================-->
-                            <!--End widget-->
-
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -1429,7 +707,6 @@
     </div>
 
 
-
     <!-- FOOTER -->
     <!--===================================================-->
     <footer id="footer">
@@ -1437,9 +714,9 @@
         <!-- Visible when footer positions are fixed -->
         <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
         <div class="show-fixed pull-right">
-            You have <a href="#" class="text-bold text-main"><span class="label label-danger">3</span> pending action.</a>
+            You have <a href="#" class="text-bold text-main"><span class="label label-danger">3</span> pending
+                action.</a>
         </div>
-
 
 
         <!-- Visible when footer positions are static -->
@@ -1449,13 +726,11 @@
         </div>
 
 
-
         <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
         <!-- Remove the class "show-fixed" and "hide-fixed" to make the content always appears. -->
         <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
         <p class="pad-lft">&#0169; 2016 Your Company</p>
-
 
 
     </footer>
@@ -1471,11 +746,9 @@
     <!--===================================================-->
 
 
-
 </div>
 <!--===================================================-->
 <!-- END OF CONTAINER -->
-
 
 
 <!-- SETTINGS - DEMO PURPOSE ONLY -->
