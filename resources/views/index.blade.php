@@ -605,6 +605,14 @@
 											</span>
                                     </a>
                                 </li>
+                                <li>
+                                    <a href="widgets.html">
+                                        <i class="demo-psi-gear-2"></i>
+                                        <span class="menu-title">
+												<strong>修改密码</strong>
+											</span>
+                                    </a>
+                                </li>
                                 <li class="list-divider"></li>
 
                             </ul>
