@@ -569,6 +569,44 @@
                                 </li>
                                 <li class="list-divider"></li>
 
+                                <li class="list-header">权限管理</li>
+                                <li>
+                                    <a href="widgets.html">
+                                        <i class="demo-psi-gear-2"></i>
+                                        <span class="menu-title">
+												<strong>添加数据</strong>
+											</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="widgets.html">
+                                        <i class="demo-psi-gear-2"></i>
+                                        <span class="menu-title">
+												<strong>分配数据</strong>
+											</span>
+                                    </a>
+                                </li>
+                                <li class="list-divider"></li>
+
+                                <li class="list-header">用户管理</li>
+                                <li>
+                                    <a href="widgets.html">
+                                        <i class="demo-psi-gear-2"></i>
+                                        <span class="menu-title">
+												<strong>用户列表</strong>
+											</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="widgets.html">
+                                        <i class="demo-psi-gear-2"></i>
+                                        <span class="menu-title">
+												<strong>添加用户</strong>
+											</span>
+                                    </a>
+                                </li>
+                                <li class="list-divider"></li>
+
                             </ul>
                         </div>
                     </div>
