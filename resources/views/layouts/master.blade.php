@@ -342,7 +342,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="widgets.html">
+                                    <a href="{{url('createenter')}}">
                                         <i class="demo-psi-gear-2"></i>
                                         <span class="menu-title">
 												<strong>添加企业</strong>

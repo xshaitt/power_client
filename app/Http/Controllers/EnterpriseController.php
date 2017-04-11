@@ -18,6 +18,10 @@ class EnterpriseController extends Controller
 
     public function createEnter(Request $request)
     {
-        dd($request->all());
+        $data = $request->all();
+        unset($data['_token']);
+        $result = postApiData('http://ps.dev/enterprise', $data, env('API_TOKEN'));
+        $result->nextUrl = url('/enterlist');
+        return response()->json($result);
     }
 }
