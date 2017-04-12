@@ -18,3 +18,4 @@ Route::get('/', function () {
 Route::get('/enterlist/{limit}', 'EnterpriseController@enterpriseList');
 Route::get('/createenter', 'EnterpriseController@showCreateEnterForm');
 Route::post('/createenter', 'EnterpriseController@createEnter');
+Route::get('/delenter/{id}', 'EnterpriseController@delenter');

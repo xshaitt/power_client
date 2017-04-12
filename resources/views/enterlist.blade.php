@@ -37,7 +37,8 @@
                                             <div class="label label-table label-success">正常使用</div>
                                         </td>
                                         <td class="text-center">
-                                            <a class="btn btn-danger">删除</a>
+                                            <button class="btn btn-danger delenter" eid="{{$enterprise->id}}">删除
+                                            </button>
                                             <buttion class="btn btn-info">编辑</buttion>
                                         </td>
                                     </tr>
@@ -59,4 +60,22 @@
             </div>
         </div>
     </div>
+@stop
+@section('script')
+    <script>
+        $('.delenter').click(function () {
+            var url = '{{url("delenter")}}' + '/' + $(this).attr('eid');
+            $.ajax({
+                type: 'get',
+                url: url,
+                success: function (data) {
+                    if (data.status == '200') {
+                        location.href = location.href;
+                    } else {
+                        alert(data.message);
+                    }
+                }
+            });
+        });
+    </script>
 @stop

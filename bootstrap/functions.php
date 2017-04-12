@@ -28,8 +28,10 @@ function postApiData($url, $data, $token)
     return $curl->response;
 }
 
-function delete($url, $token)
+function deleteApiData($url, $token)
 {
     $curl = new Curl\Curl();
+    $curl->setHeader('Api-Token', $token);
+    $curl->delete($url);
     return $curl->response;
 }
