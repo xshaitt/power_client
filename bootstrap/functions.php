@@ -17,6 +17,7 @@ function putApiData($url, $data, $token)
 {
     $curl = new Curl\Curl();
     $curl->setHeader('Api-Token', $token);
+    $curl->put($url, $data);
     return $curl->response;
 }
 
