@@ -15,10 +15,6 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/curl', function () {
-    var_dump(getApiData('http://ps.dev/curl', env('API_TOKEN')));
-});
-
 Route::get('/enterlist', 'EnterpriseController@enterpriseList');
 Route::get('/createenter', 'EnterpriseController@showCreateEnterForm');
 Route::post('/createenter', 'EnterpriseController@createEnter');
