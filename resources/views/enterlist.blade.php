@@ -36,7 +36,10 @@
                                         <td class="text-center">
                                             <div class="label label-table label-success">正常使用</div>
                                         </td>
-                                        <td class="text-center">-</td>
+                                        <td class="text-center">
+                                            <a class="btn btn-danger">删除</a>
+                                            <buttion class="btn btn-info">编辑</buttion>
+                                        </td>
                                     </tr>
                                 @endforeach
                                 </tbody>
@@ -47,29 +50,7 @@
                     </div>
                     <hr>
                     <div class="pull-right">
-                        <ul class="pagination text-nowrap mar-no">
-                            <li class="page-pre disabled">
-                                <a href="#">&lt;</a>
-                            </li>
-                            <li class="page-number active">
-                                <span>1</span>
-                            </li>
-                            <li class="page-number">
-                                <a href="#">2</a>
-                            </li>
-                            <li class="page-number">
-                                <a href="#">3</a>
-                            </li>
-                            <li>
-                                <span>...</span>
-                            </li>
-                            <li class="page-number">
-                                <a href="#">9</a>
-                            </li>
-                            <li class="page-next">
-                                <a href="#">&gt;</a>
-                            </li>
-                        </ul>
+                        {{$paginator->render()}}
                     </div>
                 </div>
                 <!--===================================================-->

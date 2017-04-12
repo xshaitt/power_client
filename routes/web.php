@@ -15,6 +15,6 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/enterlist', 'EnterpriseController@enterpriseList');
+Route::get('/enterlist/{limit}', 'EnterpriseController@enterpriseList');
 Route::get('/createenter', 'EnterpriseController@showCreateEnterForm');
 Route::post('/createenter', 'EnterpriseController@createEnter');
