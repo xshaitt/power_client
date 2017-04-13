@@ -315,8 +315,8 @@
                                     </div>
                                     <a href="#profile-nav" class="box-block" data-toggle="collapse"
                                        aria-expanded="false">
-                                        <p class="mnp-name">年轻而且有才</p>
-                                        <span class="mnp-desc">773999579@qq.com</span>
+                                        <p class="mnp-name">{{$user->name}}</p>
+                                        <span class="mnp-desc">{{$user->email}}</span>
                                     </a>
                                 </div>
                             </div>
