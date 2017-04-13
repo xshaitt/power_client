@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Pagination\LengthAwarePaginator;
+use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
 {
@@ -100,5 +101,38 @@ class UserController extends Controller
         }
         return response()->json($jsonData);
 
+    }
+
+    public function showChangepwdForm()
+    {
+        return view('changepwd');
+    }
+
+    public function changepwd(Request $request)
+    {
+        //先获取当前用户信息
+        $data = $request->all();
+        $user = session('power.home.user');
+        if (!Hash::check($data['old_password'], $user->password)) {
+            $jsonData['status'] = 300;
+            $jsonData['message'] = '旧密码不正确';
+            return response()->json($jsonData);
+        }
+        if ($data['password'] != $data['ok_password']) {
+            $jsonData['status'] = 300;
+            $jsonData['message'] = '两次密码不一致';
+            return response()->json($jsonData);
+        }
+        $putData['password'] = Hash::make($data['password']);
+        $result = putApiData(env('API_DOMAIN') . "user/{$user->id}", $putData, env('API_TOKEN'));
+        if ($result->status != 200) {
+            $jsonData['status'] = 300;
+            $jsonData['message'] = '修改密码失败';
+            return response()->json($jsonData);
+        }
+        $jsonData['status'] = 200;
+        $jsonData['message'] = '修改密码成功';
+        $jsonData['nextToUrl'] = url('/');
+        return response()->json($jsonData);
     }
 }

@@ -441,8 +441,8 @@
 											</span>
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="widgets.html">
+                                <li {!!Request::path()=='changepwd'?'class="active-link"':''!!}>
+                                    <a href="{{url('changepwd')}}">
                                         <i class="demo-psi-gear-2"></i>
                                         <span class="menu-title">
 												<strong>修改密码</strong>

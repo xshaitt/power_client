@@ -32,3 +32,5 @@ Route::get('/activeuser/{id}', 'UserController@activeUser');
 
 Route::get('/login','UserController@showLoginForm');
 Route::post('/login','UserController@login');
+Route::get('/changepwd', 'UserController@showChangepwdForm');
+Route::post('/changepwd', 'UserController@changepwd');
