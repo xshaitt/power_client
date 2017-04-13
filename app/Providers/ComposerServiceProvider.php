@@ -15,7 +15,7 @@ class ComposerServiceProvider extends ServiceProvider
     public function boot()
     {
         View::composer(
-            'master','App\Http\ViewComposers\LoginUserComposer'
+            'layouts.master','App\Http\ViewComposers\LoginUserComposer'
         );
     }
 

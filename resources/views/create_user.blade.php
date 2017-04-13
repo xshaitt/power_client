@@ -61,7 +61,7 @@
                 data: $('.enter-form').serialize(),
                 success: function (data) {
                     if (data.status == 200) {
-//                        location.href = data.nextUrl;
+                        location.href = data.nextUrl;
                     }
                     alert(data.message);
                 }
