@@ -323,7 +323,7 @@
 
                             <ul id="mainnav-menu" class="list-group">
 
-                                <li class="active-link">
+                                <li {!!Request::path()=='/'?'class="active-link"':''!!}>
                                     <a href="{{url('/')}}">
                                         <i class="demo-psi-home"></i>
                                         <span class="menu-title">
@@ -333,7 +333,7 @@
                                 </li>
 
                                 <li class="list-header">企业管理</li>
-                                <li>
+                                <li {!!Request::path()=='enterlist'?'class="active-link"':''!!}>
                                     <a href="{{url('/enterlist')}}">
                                         <i class="demo-psi-gear-2"></i>
                                         <span class="menu-title">
@@ -341,7 +341,7 @@
 											</span>
                                     </a>
                                 </li>
-                                <li>
+                                <li {!!Request::path()=='createenter'?'class="active-link"':''!!}>
                                     <a href="{{url('createenter')}}">
                                         <i class="demo-psi-gear-2"></i>
                                         <span class="menu-title">
@@ -384,14 +384,6 @@
                                         <i class="demo-psi-gear-2"></i>
                                         <span class="menu-title">
 												<strong>云服务IP</strong>
-											</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="widgets.html">
-                                        <i class="demo-psi-gear-2"></i>
-                                        <span class="menu-title">
-												<strong>短信设置</strong>
 											</span>
                                     </a>
                                 </li>
