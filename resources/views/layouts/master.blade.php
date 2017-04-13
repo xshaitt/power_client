@@ -425,16 +425,16 @@
                                 <li class="list-divider"></li>
 
                                 <li class="list-header">用户管理</li>
-                                <li>
-                                    <a href="widgets.html">
+                                <li {!!Request::path()=='userlist'?'class="active-link"':''!!}>
+                                    <a href="{{url('userlist')}}">
                                         <i class="demo-psi-gear-2"></i>
                                         <span class="menu-title">
 												<strong>用户列表</strong>
 											</span>
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="widgets.html">
+                                <li {!!Request::path()=='createuser'?'class="active-link"':''!!}>
+                                    <a href="{{url('createuser')}}">
                                         <i class="demo-psi-gear-2"></i>
                                         <span class="menu-title">
 												<strong>添加用户</strong>
