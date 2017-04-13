@@ -29,3 +29,6 @@ Route::get('/userlist/{limit?}', 'UserController@userList');
 Route::get('/deluser/{id}', 'UserController@deluser');
 Route::post('/edituser/{id}', 'UserController@editUser');
 Route::get('/activeuser/{id}', 'UserController@activeUser');
+
+Route::get('/login','UserController@showLoginForm');
+Route::post('/login','UserController@login');

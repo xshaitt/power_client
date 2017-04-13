@@ -78,4 +78,27 @@ class UserController extends Controller
         $jsonData['message'] = '此用户激活成功';
         return response()->json($jsonData);
     }
+
+    public function showLoginForm(Request $request)
+    {
+        return view('login');
+    }
+
+    public function login(Request $request)
+    {
+        $data = $request->all();
+        unset($data['_token']);
+        $result = postApiData(env('API_DOMAIN') . "user/login", $data, env('API_TOKEN'));
+        $jsonData['message'] = $result->message;
+        if ($result->status == 200) {
+            $user = $result->data;
+            $jsonData['status'] = 200;
+            $jsonData['nextToUrl'] = url('/');
+            session(['power' => ['home' => ['user' => $user]]]);
+        } else {
+            $jsonData['status'] = 300;
+        }
+        return response()->json($jsonData);
+
+    }
 }
