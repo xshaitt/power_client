@@ -135,4 +135,11 @@ class UserController extends Controller
         $jsonData['nextToUrl'] = url('/');
         return response()->json($jsonData);
     }
+
+    public function logout()
+    {
+        //TODO 服务端或许也要清除session
+        session(['power' => ['home' => null]]);
+        return redirect(url('/login'));
+    }
 }

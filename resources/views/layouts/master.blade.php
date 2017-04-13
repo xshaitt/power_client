@@ -228,14 +228,14 @@
                                     <!--<img class="img-circle img-user media-object" src="img/profile-photos/1.png" alt="Profile Picture">-->
                                     <i class="demo-pli-male ic-user"></i>
                                 </span>
-                            <div class="username hidden-xs">年轻而且有才</div>
+                            <div class="username hidden-xs">{{$user->name}}</div>
                         </a>
                         <div class="dropdown-menu dropdown-menu-md dropdown-menu-right panel-default">
 
                             <!-- User dropdown menu -->
                             <ul class="head-list">
                                 <li>
-                                    <a href="#">
+                                    <a href="{{url('/changepwd')}}">
                                         <i class="demo-pli-computer-secure icon-lg icon-fw"></i>修改密码
                                     </a>
                                 </li>
@@ -248,7 +248,7 @@
 
                             <!-- Dropdown footer -->
                             <div class="pad-all text-right">
-                                <a href="pages-login.html" class="btn btn-primary">
+                                <a href="{{url('/logout')}}" class="btn btn-primary">
                                     <i class="demo-pli-unlock"></i> 退出
                                 </a>
                             </div>

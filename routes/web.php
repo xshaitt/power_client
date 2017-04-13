@@ -33,6 +33,8 @@ Route::group(['middleware' => 'login'], function () {
 
     Route::get('/changepwd', 'UserController@showChangepwdForm');
     Route::post('/changepwd', 'UserController@changepwd');
+
+    Route::get('/logout', 'UserController@logout');
 });
 
 Route::group(['middleware' => 'no.login'], function () {
