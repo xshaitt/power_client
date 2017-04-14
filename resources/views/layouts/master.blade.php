@@ -364,15 +364,23 @@
                                     <a href="widgets.html">
                                         <i class="demo-psi-gear-2"></i>
                                         <span class="menu-title">
-												<strong>添加电源管家</strong>
+												<strong>电源管家功能</strong>
 											</span>
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="widgets.html">
+                                <li {!!Request::path()=='allotpower'?'class="active-link"':''!!}>
+                                    <a href="{{url('allotpower')}}">
                                         <i class="demo-psi-gear-2"></i>
                                         <span class="menu-title">
-												<strong>电源管家功能</strong>
+												<strong>分配电源管家</strong>
+											</span>
+                                    </a>
+                                </li>
+                                <li {!!Request::path()=='createpower'?'class="active-link"':''!!}>
+                                    <a href="{{url('createpower')}}">
+                                        <i class="demo-psi-gear-2"></i>
+                                        <span class="menu-title">
+												<strong>创建电源管家</strong>
 											</span>
                                     </a>
                                 </li>
