@@ -37,7 +37,8 @@ Route::group(['middleware' => 'login'], function () {
     Route::get('/logout', 'UserController@logout');
 
     //电源管家相关
-    Route::get('/allotpower', 'PowerController@showAllotPowerForm');
+    Route::get('/allotpower/{limit?}', 'PowerController@showAllotPowerForm');
+    Route::post('/allotpower', 'PowerController@allotpower');
     Route::get('/createpower', 'PowerController@showCreatePowerForm');
     Route::post('/createpower', 'PowerController@createPower');
 });

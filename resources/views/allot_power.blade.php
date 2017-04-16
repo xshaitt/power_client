@@ -13,21 +13,22 @@
                         <div class="form-group">
                             <label class="col-sm-3 control-label" for="demo-hor-inputemail">未分配的电源管家</label>
                             <div class="col-sm-9" style="height: 33px;">
-                                <select class="form-control" name="enter_id">
-                                    <option value="0">管理员</option>
-                                    @if(!empty($enterprises)&&count($enterprises)>0)
-                                        @foreach($enterprises as $enterprise)
-                                            <option value="{{$enterprise->id}}">{{$enterprise->name}}</option>
+                                @if(!empty($powers)&&count($powers)>0)
+                                    <select class="form-control" name="pid">
+                                        @foreach($powers as $power)
+                                            <option value="{{$power->id}}">{{$power->name}}</option>
                                         @endforeach
-                                    @endif
-                                </select>
+                                    </select>
+                                @else
+                                    <div class="alert alert-danger">暂时没有可以分配的电源管家</div>
+                                @endif
+
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-sm-3 control-label" for="demo-hor-inputemail">所属企业</label>
                             <div class="col-sm-9" style="height: 33px;">
                                 <select class="form-control" name="enter_id">
-                                    <option value="0">管理员</option>
                                     @if(!empty($enterprises)&&count($enterprises)>0)
                                         @foreach($enterprises as $enterprise)
                                             <option value="{{$enterprise->id}}">{{$enterprise->name}}</option>
@@ -53,7 +54,7 @@
                 data: $('.enter-form').serialize(),
                 success: function (data) {
                     if (data.status == 200) {
-                        location.href = data.nextUrl;
+                        location.href = data.nextToUrl;
                     }
                     alert(data.message);
                 }
