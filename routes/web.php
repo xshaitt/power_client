@@ -41,6 +41,8 @@ Route::group(['middleware' => 'login'], function () {
     Route::post('/allotpower', 'PowerController@allotpower');
     Route::get('/createpower', 'PowerController@showCreatePowerForm');
     Route::post('/createpower', 'PowerController@createPower');
+    Route::get('/powerlist/{limit?}', 'PowerController@powerList');
+    Route::post('/editpower/{id}', 'PowerController@editpower');
 });
 
 Route::group(['middleware' => 'no.login'], function () {

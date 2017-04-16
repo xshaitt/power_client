@@ -352,8 +352,8 @@
                                 <li class="list-divider"></li>
 
                                 <li class="list-header">电源管家管理</li>
-                                <li>
-                                    <a href="widgets.html">
+                                <li {!!Request::path()=='powerlist'?'class="active-link"':''!!}>
+                                    <a href="{{url('powerlist')}}">
                                         <i class="demo-psi-gear-2"></i>
                                         <span class="menu-title">
 												<strong>电源管家列表</strong>
