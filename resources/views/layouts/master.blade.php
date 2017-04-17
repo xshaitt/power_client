@@ -414,19 +414,27 @@
                                 <li class="list-divider"></li>
 
                                 <li class="list-header">权限管理</li>
-                                <li>
-                                    <a href="widgets.html">
+                                <li {!!Request::path()=='userview'?'class="active-link"':''!!}>
+                                    <a href="{{url('userview')}}">
                                         <i class="demo-psi-gear-2"></i>
                                         <span class="menu-title">
-												<strong>添加数据</strong>
+												<strong>角色用户</strong>
 											</span>
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="widgets.html">
+                                <li {!!Request::path()=='roleview'?'class="active-link"':''!!}>
+                                    <a href="{{url('roleview')}}">
                                         <i class="demo-psi-gear-2"></i>
                                         <span class="menu-title">
-												<strong>分配数据</strong>
+												<strong>角色列表</strong>
+											</span>
+                                    </a>
+                                </li>
+                                <li {!!Request::path()=='perview'?'class="active-link"':''!!}>
+                                    <a href="{{url('perview')}}">
+                                        <i class="demo-psi-gear-2"></i>
+                                        <span class="menu-title">
+												<strong>权限列表</strong>
 											</span>
                                     </a>
                                 </li>
