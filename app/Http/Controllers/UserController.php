@@ -8,6 +8,13 @@ use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
 {
+    public function index(Request $request)
+    {
+        $result = postApiData(env('API_DOMAIN') . '/power/all', [], env('API_TOKEN'));
+        $data['powers'] = $result->data;
+        return view('index', $data);
+    }
+
     public function showCreateUserForm()
     {
         $result = getApiData(env('API_DOMAIN') . 'enterprises', env('API_TOKEN'));

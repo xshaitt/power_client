@@ -12,9 +12,7 @@
 */
 
 Route::group(['middleware' => 'login'], function () {
-    Route::get('/', function () {
-        return view('index');
-    });
+    Route::get('/', 'UserController@index');
     //企业相关
     Route::get('/enterlist/{limit?}', 'EnterpriseController@enterpriseList');
     Route::get('/createenter', 'EnterpriseController@showCreateEnterForm');
