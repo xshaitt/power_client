@@ -360,14 +360,6 @@
 											</span>
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="widgets.html">
-                                        <i class="demo-psi-gear-2"></i>
-                                        <span class="menu-title">
-												<strong>电源管家功能</strong>
-											</span>
-                                    </a>
-                                </li>
                                 <li {!!Request::path()=='allotpower'?'class="active-link"':''!!}>
                                     <a href="{{url('allotpower')}}">
                                         <i class="demo-psi-gear-2"></i>
@@ -387,7 +379,7 @@
                                 <li class="list-divider"></li>
 
                                 <li class="list-header">系统设置</li>
-                                <li>
+                                <li {!!Request::path()=='systemid'?'class="active-link"':''!!}>
                                     <a href="{{asset('systemid')}}">
                                         <i class="demo-psi-gear-2"></i>
                                         <span class="menu-title">
@@ -395,7 +387,7 @@
 											</span>
                                     </a>
                                 </li>
-                                <li>
+                                <li {!!Request::path()=='showmessage'?'class="active-link"':''!!}>
                                     <a href="{{asset('showmessage')}}">
                                         <i class="demo-psi-gear-2"></i>
                                         <span class="menu-title">

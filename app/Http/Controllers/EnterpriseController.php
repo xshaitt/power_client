@@ -10,7 +10,7 @@ class EnterpriseController extends Controller
     public function enterpriseList(Request $request, $limit = 3)
     {
         $page = $request->get('page', 1);
-        $result = getApiData(env('API_DOMAIN') . "message/{$page}/{$limit}", env('API_TOKEN'));
+        $result = getApiData(env('API_DOMAIN') . "/enterprise/{$page}/{$limit}", env('API_TOKEN'));
         $total = $result->total;
         $paginator = new LengthAwarePaginator($result->data, $total, $limit);
         $paginator->setPath($request->url());

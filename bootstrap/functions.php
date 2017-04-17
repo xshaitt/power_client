@@ -78,11 +78,11 @@ function takeMessage($type,$phone,$power,$num,$switch)
     $jsonData = ['status'=>'200','message'=>'发送成功'];
 
     //判断号码是否合法
-    $checkPhone = \Illuminate\Support\Facades\DB::table('enterprises')->where('phone',$phone)->value('phone');
-    if($checkPhone == null){
-        $jsonData = ['status'=>'404','message'=>'该号码不合法'];
-        return response()->json($jsonData);
-    }
+//    $checkPhone = \Illuminate\Support\Facades\DB::table('enterprises')->where('phone',$phone)->value('phone');
+//    if($checkPhone == null){
+//        $jsonData = ['status'=>'404','message'=>'该号码不合法'];
+//        return response()->json($jsonData);
+//    }
 
     //阿里大于参数配置
     $config = [
@@ -98,7 +98,7 @@ function takeMessage($type,$phone,$power,$num,$switch)
     $req->setRecNum($phone)
         ->setSmsFreeSignName(env('MESSAGE_SIGNNAME'));
     //通过判断是什么情况（1是电源不足，2是ups开关状态）来设置模板及参数
-    if($type==1) $req->setSmsTemplateCode(env('MESSAGE_FIRST_TEMPLATE'))->setSmsParam(['num'=>$num,'power' => $power]);
+    if($type==1) $req->setSmsTemplateCode(env('MESSAGE_FIRST_TEMPLATE'))->setSmsParam(['str'=>$num,'time' => $power]);
     if($type==2) $req->setSmsTemplateCode(env('MESSAGE_SECOND_TEMPLATE'))->setSmsParam(['switch'=>$switch]);
 
     //执行发送短信
