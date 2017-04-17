@@ -380,7 +380,7 @@
 
                                 <li class="list-header">系统设置</li>
                                 <li>
-                                    <a href="widgets.html">
+                                    <a href="{{asset('systemid')}}">
                                         <i class="demo-psi-gear-2"></i>
                                         <span class="menu-title">
 												<strong>云服务IP</strong>
@@ -388,18 +388,10 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="widgets.html">
+                                    <a href="{{asset('showmessage')}}">
                                         <i class="demo-psi-gear-2"></i>
                                         <span class="menu-title">
 												<strong>短信列表</strong>
-											</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="widgets.html">
-                                        <i class="demo-psi-gear-2"></i>
-                                        <span class="menu-title">
-												<strong>告警通知</strong>
 											</span>
                                     </a>
                                 </li>
