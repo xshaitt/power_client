@@ -106,3 +106,10 @@ Route::post('bindpermissions','RbacController@bindpermissions');
 Route::post('bindrole','RbacController@bindrole');
 Route::get('unbindrole/{userid}/{roleid}','RbacController@unbindrole');
 Route::get('unbindpermissions/{roleid}/{perid}','RbacController@unbindpermissions');
+
+
+Route::get('/systemid','SystemController@showSystemIp');//系统Ip展示
+Route::get('/showmessage','SystemController@showMessage');//短信列表展示
+Route::get('/delmessage','SystemController@delMessage');//删除短信
+Route::get('/editminpower','SystemController@editMinPower');//修改告警电量
+Route::get('/editups','SystemController@editUps');//修改ups是否发送短信状态

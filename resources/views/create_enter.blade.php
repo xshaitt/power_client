@@ -6,7 +6,7 @@
             <div class="panel">
                 <div class="panel-heading">
                     <h3 class="panel-title">添加企业</h3>
-                </div>
+            </div>
                 <form class="form-horizontal enter-form" onsubmit="return false;">
                     {{csrf_field()}}
                     <div class="panel-body">
